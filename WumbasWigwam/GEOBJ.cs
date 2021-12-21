@@ -32,7 +32,7 @@ namespace WumbasWigwam
       int index2 = 0;
       while (index1 < vertexData.Length)
       {
-        str = str + string.Format("v {0} {1} {2}" + Environment.NewLine, (object) vertexData[index1], (object) vertexData[index1 + 1], (object) vertexData[index1 + 2]) + string.Format("#vcolor {0} {1} {2}" + Environment.NewLine, (object) vertexColorData[index2], (object) vertexColorData[index2 + 1], (object) vertexColorData[index2 + 2], (object) vertexColorData[index2 + 3]);
+        str = str + string.Format("v {0} {1} {2} {3} {4} {5} {6}" + Environment.NewLine, (object) vertexData[index1], (object) vertexData[index1 + 1], (object) vertexData[index1 + 2], (object) vertexColorData[index2], (object) vertexColorData[index2 + 1], (object) vertexColorData[index2 + 2], (object) vertexColorData[index2 + 3]);
         index1 += 3;
         index2 += 4;
       }
