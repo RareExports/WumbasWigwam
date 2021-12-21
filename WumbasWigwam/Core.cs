@@ -691,7 +691,7 @@ namespace WumbasWigwam
               }
               if (flag2)
               {
-                textureData.Add(new TextureData(textures[currentTexture].n64TextureBytes, textures[currentTexture].pixels, textures[currentTexture].textureWidth, textures[currentTexture].textureHeight));
+                textureData.Add(new TextureData(textures[currentTexture].n64TextureBytes, textures[currentTexture].pixels, textures[currentTexture].textureWidth, textures[currentTexture].textureHeight, Tile.cms, Tile.cmt));
                 textureData_ = textureData.Count<TextureData>() - 1;
               }
               textureSetting.Add(new Texture(textures[currentTexture].textureWidth, textures[currentTexture].textureHeight, Tile.cms, Tile.cmt, texturesGL, textureData_, cm, (byte) 8, textures[currentTexture].textureHRatio, textures[currentTexture].textureWRatio, textures[currentTexture].palSize, false, false));
@@ -1592,6 +1592,10 @@ label_32:
         foreach (TextureData textureData in TextureDataList)
         {
           contents2 = contents2 + "newmtl " + (object) textureData.gl.GetHashCode() + Environment.NewLine;
+          if (textureData.cms == 2)
+          	contents2 = contents2 + "clamp x" + Environment.NewLine;
+          if (textureData.cmt == 2)
+          	contents2 = contents2 + "clamp y" + Environment.NewLine;
           contents2 = contents2 + "map_Kd " + (object) textureData.gl.GetHashCode() + ".png" + Environment.NewLine;
           GEOBJ.writeTexture(outDir + (object) textureData.gl.GetHashCode() + ".png", textureData.gl, textureData.width, textureData.height);
         }
