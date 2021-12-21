@@ -220,7 +220,7 @@ namespace WumbasWigwam
         int num13 = (int) num6;
         int num14 = (int) num7;
         int num15 = (int) num8;
-        int num16 = (int) maxValue;
+        int num16 = bytesInFile[offset + 15];
         F3DEXVert f3DexVert = new F3DEXVert((short) num1, (short) num9, (short) num10, (short) num11, (short) num12, (byte) num13, (byte) num14, (byte) num15, (byte) num16);
         verts[index] = f3DexVert;
         offset += 16;
