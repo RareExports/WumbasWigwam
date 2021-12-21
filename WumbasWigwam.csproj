@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Spice\Desktop\RareHacking\WumbasWigwam\WumbasWigwam.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE76B5C9-DA81-48CA-A061-357599BF7D02}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>WumbasWigwam</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <ApplicationVersion>0.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Magick.NET-Q8-AnyCPU">
+      <HintPath>lib\Magick.NET-Q8-AnyCPU.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>lib\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK">
+      <HintPath>lib\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.Compatibility">
+      <HintPath>lib\OpenTK.Compatibility.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl">
+      <HintPath>lib\OpenTK.GLControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GradientPanel.cs" />
+    <Compile Include="RummageAttributes\RummageNoRemoveAttribute.cs" />
+    <Compile Include="RummageAttributes\RummageNoRenameAttribute.cs" />
+    <Compile Include="RummageAttributes\RummageNoRenameAnythingAttribute.cs" />
+    <Compile Include="RummageAttributes\RummageNoUnnestAttribute.cs" />
+    <Compile Include="RummageAttributes\RummageNoMarkPublicAttribute.cs" />
+    <Compile Include="RummageAttributes\RummageNoInlineAttribute.cs" />
+    <Compile Include="RummageAttributes\RummageInlineAttribute.cs" />
+    <Compile Include="RummageAttributes\RummageKeepReflectionSafeAttribute.cs" />
+    <Compile Include="RummageAttributes\RummageKeepArgumentsReflectionSafeAttribute.cs" />
+    <Compile Include="RummageAttributes\RummageKeepUsersReflectionSafeAttribute.cs" />
+    <Compile Include="RummageAttributes\RummageAssumeTypeSafeAttribute.cs" />
+    <Compile Include="RummageAttributes\Rummage.cs" />
+    <Compile Include="WumbasWigwam\Mode.cs" />
+    <Compile Include="WumbasWigwam\DrawMode.cs" />
+    <Compile Include="WumbasWigwam\ScrollMode.cs" />
+    <Compile Include="WumbasWigwam\PathMode.cs" />
+    <Compile Include="WumbasWigwam\MTransform.cs" />
+    <Compile Include="WumbasWigwam\SpriteTextureFormat.cs" />
+    <Compile Include="WumbasWigwam\BBHelper.cs" />
+    <Compile Include="WumbasWigwam\BBUI.cs" />
+    <Compile Include="WumbasWigwam\BBXML.cs" />
+    <Compile Include="WumbasWigwam\ScrollSpeed.cs" />
+    <Compile Include="WumbasWigwam\ObjectType.cs" />
+    <Compile Include="WumbasWigwam\DrawCommandType.cs" />
+    <Compile Include="WumbasWigwam\CollisionType.cs" />
+    <Compile Include="WumbasWigwam\GroundType.cs" />
+    <Compile Include="WumbasWigwam\SoundType.cs" />
+    <Compile Include="WumbasWigwam\TransformationType.cs" />
+    <Compile Include="WumbasWigwam\BKCharacterHead.cs" />
+    <Compile Include="WumbasWigwam\TextureFormat.cs" />
+    <Compile Include="WumbasWigwam\TexelSize.cs" />
+    <Compile Include="WumbasWigwam\CullMode.cs" />
+    <Compile Include="WumbasWigwam\BTDecryption.cs" />
+    <Compile Include="WumbasWigwam\F3DEX2.cs" />
+    <Compile Include="WumbasWigwam\F3DEXVert.cs" />
+    <Compile Include="WumbasWigwam\GEOBJ.cs" />
+    <Compile Include="WumbasWigwam\ModelObject.cs" />
+    <Compile Include="WumbasWigwam\Vertex.cs" />
+    <Compile Include="WumbasWigwam\Triangle.cs" />
+    <Compile Include="WumbasWigwam\CollisionTriangle.cs" />
+    <Compile Include="WumbasWigwam\Texture.cs" />
+    <Compile Include="WumbasWigwam\TextureData.cs" />
+    <Compile Include="WumbasWigwam\TriangleColor.cs" />
+    <Compile Include="WumbasWigwam\Point_.cs" />
+    <Compile Include="WumbasWigwam\Vector.cs" />
+    <Compile Include="WumbasWigwam\ModelDrawCommand.cs" />
+    <Compile Include="WumbasWigwam\ModelViewer.cs" />
+    <Compile Include="WumbasWigwam\n64_cic_nus_6105.cs" />
+    <Compile Include="WumbasWigwam\ObjectDB.cs" />
+    <Compile Include="WumbasWigwam\BaseCamera.cs" />
+    <Compile Include="WumbasWigwam\CameraObject.cs" />
+    <Compile Include="WumbasWigwam\GLCamera.cs" />
+    <Compile Include="WumbasWigwam\ObjectFile.cs" />
+    <Compile Include="WumbasWigwam\ObjectFileHeader.cs" />
+    <Compile Include="WumbasWigwam\RomHandler.cs" />
+    <Compile Include="WumbasWigwam\Sprite.cs" />
+    <Compile Include="WumbasWigwam\Core.cs" />
+    <Compile Include="WumbasWigwam\AboutBox.cs" />
+    <Compile Include="WumbasWigwam\Poles.cs" />
+    <Compile Include="WumbasWigwam\ColorTrackBar.cs" />
+    <Compile Include="WumbasWigwam\ColorTrackBarDesigner.cs" />
+    <Compile Include="WumbasWigwam\Vector3.cs" />
+    <Compile Include="WumbasWigwam\Matrix.cs" />
+    <Compile Include="WumbasWigwam\Matrix3.cs" />
+    <Compile Include="WumbasWigwam\Matrix4.cs" />
+    <Compile Include="WumbasWigwam\TrackEvent.cs" />
+    <Compile Include="WumbasWigwam\MidiParse.cs" />
+    <Compile Include="WumbasWigwam\SpriteEditorForm.cs" />
+    <Compile Include="WumbasWigwam\ImageHandler.cs" />
+    <Compile Include="WumbasWigwam\Progress.cs" />
+    <Compile Include="WumbasWigwam\WarpDestinationForm.cs" />
+    <Compile Include="WumbasWigwam\GECompression.cs" />
+    <Compile Include="WumbasWigwam\OpenSetFileForm.cs" />
+    <Compile Include="WumbasWigwam\WarpEntryPointForm.cs" />
+    <Compile Include="WumbasWigwam\WarpLocation.cs" />
+    <Compile Include="WumbasWigwam\EntryPoint.cs" />
+    <Compile Include="WumbasWigwam\World.cs" />
+    <Compile Include="WumbasWigwam\PickableObject.cs" />
+    <Compile Include="WumbasWigwam\LevelEntryPoint.cs" />
+    <Compile Include="WumbasWigwam\Form1.cs" />
+    <Compile Include="WumbasWigwam\DrawCommand.cs" />
+    <Compile Include="WumbasWigwam\ActiveBone.cs" />
+    <Compile Include="WumbasWigwam\AnimationFile.cs" />
+    <Compile Include="WumbasWigwam\BKAnimation.cs" />
+    <Compile Include="WumbasWigwam\BKAnimationSection.cs" />
+    <Compile Include="WumbasWigwam\BKAnimationCommand.cs" />
+    <Compile Include="WumbasWigwam\Bone.cs" />
+    <Compile Include="WumbasWigwam\BoundingBox.cs" />
+    <Compile Include="WumbasWigwam\ObjectData.cs" />
+    <Compile Include="WumbasWigwam\BKPath.cs" />
+    <Compile Include="WumbasWigwam\LevelStat.cs" />
+    <Compile Include="WumbasWigwam\ErasedObject.cs" />
+    <Compile Include="WumbasWigwam\Program.cs" />
+    <Compile Include="WumbasWigwam\SetupFile.cs" />
+    <Compile Include="WumbasWigwam\SetupFileReader.cs" />
+    <Compile Include="WumbasWigwam\F3DEXTexture.cs" />
+    <Compile Include="WumbasWigwam\Tile.cs" />
+    <Compile Include="WumbasWigwam\Properties\Resources.cs" />
+    <Compile Include="WumbasWigwam\Properties\Settings.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WumbasWigwam\AboutBox.resx" />
+    <EmbeddedResource Include="WumbasWigwam\Form1.resx" />
+    <EmbeddedResource Include="WumbasWigwam\ModelViewer.resx" />
+    <EmbeddedResource Include="WumbasWigwam\OpenSetFileForm.resx" />
+    <EmbeddedResource Include="WumbasWigwam\Progress.resx" />
+    <EmbeddedResource Include="WumbasWigwam\Properties\Resources.resx" />
+    <EmbeddedResource Include="WumbasWigwam\SpriteEditorForm.resx" />
+    <EmbeddedResource Include="WumbasWigwam\WarpDestinationForm.resx" />
+    <EmbeddedResource Include="WumbasWigwam\WarpEntryPointForm.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
