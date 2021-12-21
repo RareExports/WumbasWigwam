@@ -37,7 +37,7 @@ namespace WumbasWigwam
         index2 += 4;
       }
       for (int index3 = 0; index3 < vertexTextureCoordData.Length; index3 += 2)
-        str += string.Format("vt {0} {1}" + Environment.NewLine, (object) vertexTextureCoordData[index3], (object) (float) ((double) vertexTextureCoordData[index3 + 1] * -1.0));
+        str += string.Format("vt {0} {1}" + Environment.NewLine, (object) vertexTextureCoordData[index3], (object) (float) (((double) vertexTextureCoordData[index3 + 1] * -1.0) + 1.0));
       return str;
     }
 
