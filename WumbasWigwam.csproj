@@ -30,6 +30,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>WIGWAM_ICO.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Magick.NET-Q8-AnyCPU">
       <HintPath>lib\Magick.NET-Q8-AnyCPU.dll</HintPath>
@@ -54,7 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GradientPanel.cs" />
+    <Compile Include="GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="RummageAttributes\RummageNoRemoveAttribute.cs" />
     <Compile Include="RummageAttributes\RummageNoRenameAttribute.cs" />
     <Compile Include="RummageAttributes\RummageNoRenameAnythingAttribute.cs" />
@@ -101,7 +106,9 @@
     <Compile Include="WumbasWigwam\Point_.cs" />
     <Compile Include="WumbasWigwam\Vector.cs" />
     <Compile Include="WumbasWigwam\ModelDrawCommand.cs" />
-    <Compile Include="WumbasWigwam\ModelViewer.cs" />
+    <Compile Include="WumbasWigwam\ModelViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="WumbasWigwam\n64_cic_nus_6105.cs" />
     <Compile Include="WumbasWigwam\ObjectDB.cs" />
     <Compile Include="WumbasWigwam\BaseCamera.cs" />
@@ -112,9 +119,13 @@
     <Compile Include="WumbasWigwam\RomHandler.cs" />
     <Compile Include="WumbasWigwam\Sprite.cs" />
     <Compile Include="WumbasWigwam\Core.cs" />
-    <Compile Include="WumbasWigwam\AboutBox.cs" />
+    <Compile Include="WumbasWigwam\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="WumbasWigwam\Poles.cs" />
-    <Compile Include="WumbasWigwam\ColorTrackBar.cs" />
+    <Compile Include="WumbasWigwam\ColorTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="WumbasWigwam\ColorTrackBarDesigner.cs" />
     <Compile Include="WumbasWigwam\Vector3.cs" />
     <Compile Include="WumbasWigwam\Matrix.cs" />
@@ -122,19 +133,31 @@
     <Compile Include="WumbasWigwam\Matrix4.cs" />
     <Compile Include="WumbasWigwam\TrackEvent.cs" />
     <Compile Include="WumbasWigwam\MidiParse.cs" />
-    <Compile Include="WumbasWigwam\SpriteEditorForm.cs" />
+    <Compile Include="WumbasWigwam\SpriteEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="WumbasWigwam\ImageHandler.cs" />
-    <Compile Include="WumbasWigwam\Progress.cs" />
-    <Compile Include="WumbasWigwam\WarpDestinationForm.cs" />
+    <Compile Include="WumbasWigwam\Progress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WumbasWigwam\WarpDestinationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="WumbasWigwam\GECompression.cs" />
-    <Compile Include="WumbasWigwam\OpenSetFileForm.cs" />
-    <Compile Include="WumbasWigwam\WarpEntryPointForm.cs" />
+    <Compile Include="WumbasWigwam\OpenSetFileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WumbasWigwam\WarpEntryPointForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="WumbasWigwam\WarpLocation.cs" />
     <Compile Include="WumbasWigwam\EntryPoint.cs" />
     <Compile Include="WumbasWigwam\World.cs" />
     <Compile Include="WumbasWigwam\PickableObject.cs" />
     <Compile Include="WumbasWigwam\LevelEntryPoint.cs" />
-    <Compile Include="WumbasWigwam\Form1.cs" />
+    <Compile Include="WumbasWigwam\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="WumbasWigwam\DrawCommand.cs" />
     <Compile Include="WumbasWigwam\ActiveBone.cs" />
     <Compile Include="WumbasWigwam\AnimationFile.cs" />
@@ -166,6 +189,9 @@
     <EmbeddedResource Include="WumbasWigwam\SpriteEditorForm.resx" />
     <EmbeddedResource Include="WumbasWigwam\WarpDestinationForm.resx" />
     <EmbeddedResource Include="WumbasWigwam\WarpEntryPointForm.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WIGWAM_ICO.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
