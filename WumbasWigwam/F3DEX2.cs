@@ -235,7 +235,7 @@ namespace WumbasWigwam
       bool deleteTextureGL)
     {
       Gl.glEnable(3553);
-      byte[] textureN64Bytes = new byte[texture.textureSize];
+      byte[] textureN64Bytes = new byte[texture.textureSize * 2];
       if (texture.external)
       {
         textureN64Bytes = !texture.palLoaded ? texture.externalFile : texture.GetIndices();
